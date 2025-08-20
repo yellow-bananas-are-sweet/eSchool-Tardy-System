@@ -33,20 +33,33 @@ import '@ionic/react/css/palettes/dark.system.css';
 /* Theme variables */
 import './theme/variables.css';
 
+import { IonButton, IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+
 setupIonicReact();
 
 const App: React.FC = () => (
   <IonApp>
-    <IonReactRouter>
-      <IonRouterOutlet>
-        <Route exact path="/home">
-          <Home />
-        </Route>
-        <Route exact path="/">
-          <Redirect to="/home" />
-        </Route>
-      </IonRouterOutlet>
-    </IonReactRouter>
+    <IonPage>
+      <IonHeader>
+        <IonToolbar>
+          <IonTitle>eSchool Tardy System</IonTitle>
+          <IonButton fill="clear" slot="end" href="/login">Login</IonButton>
+          <IonButton fill="clear" slot="end" href="/register">Register</IonButton>
+        </IonToolbar>
+      </IonHeader>
+      <IonContent fullscreen>
+        <IonReactRouter>
+          <IonRouterOutlet>
+            <Route exact path="/home">
+              <Home />
+            </Route>
+            <Route exact path="/">
+              <Redirect to="/home" />
+            </Route>
+          </IonRouterOutlet>
+        </IonReactRouter>
+      </IonContent>
+    </IonPage>
   </IonApp>
 );
 

@@ -1,0 +1,6 @@
+.centered-div {
+    display: flex;
+    justify-content: center;
+    min-height: 70vh;
+    align-content: center;
+}
