@@ -6,6 +6,7 @@ eSD API Call Docs: https://support.renaissance.com/s/article/API-Endpoints-with-
 To setup Ionic project:
     - cd frontend
     - npm install
+    - npm install -g @ionic/cli
 
 To run Ionic project:
     - cd frontend
