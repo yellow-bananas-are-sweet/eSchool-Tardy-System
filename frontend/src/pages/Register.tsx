@@ -8,7 +8,7 @@ const Register: React.FC = () => {
           <IonCardTitle>Register Page</IonCardTitle>
         </IonCardHeader>
         <IonCardContent>
-          Register Page Blank Template
+          Register Page Work in Proress
         </IonCardContent>
       </IonCard>
     </div>

@@ -1,0 +1,5 @@
+Needs:
+    - Get scanner
+    - Get printer
+    - Get login credentials
+    - Get access to API calls

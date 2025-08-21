@@ -46,7 +46,7 @@ const App: React.FC = () => (
         <IonToolbar>
           <IonTitle>eSchool Tardy System</IonTitle>
           <IonButton fill="clear" slot="end" href="/login">Login</IonButton>
-          <IonButton fill="clear" slot="end" href="/register">Register</IonButton>
+          <IonButton disabled fill="clear" slot="end" href="/register">Register</IonButton>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
