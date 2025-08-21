@@ -68,6 +68,8 @@ We use eSchoolData API endpoints for:
 📖 **Full eSD API documentation:**
 [API Reference – Renaissance/eSD](https://support.renaissance.com/s/article/API-Endpoints-with-Associated-Resource-Action-1752692902048?language=en_US)
 
+eSchool Archietecture + more api info: https://guru.eschooldata.com/api/Developers/Docs
+
 ---
 
 ## 📑 Documentation
