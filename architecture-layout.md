@@ -21,7 +21,6 @@
 #### Other (Custom Input)
 #### Skip
 ### Reason Submission
-#### Sent it to the sheet and database
 ## 4. Data Recording
 ### Spreadsheet Integration
 #### Google Sheets/Excel API
