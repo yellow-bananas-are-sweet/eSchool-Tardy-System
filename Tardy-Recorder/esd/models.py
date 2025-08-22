@@ -4,13 +4,11 @@ from typing import Optional
 
 
 
-
 @dataclass
 class Student:
     id: str
     name: str
     grade: Optional[str] = None
-
 
 
 
