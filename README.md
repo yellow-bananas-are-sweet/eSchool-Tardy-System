@@ -1,3 +1,6 @@
+# HOW TO MAKE EXE:
+pyinstaller --onefile --noconsole scan_and_print.py
+
 # eSchool Tardy System
 
 A teacher-operated attendance system for **Cypress Woods High School** that connects directly to **eSchoolData (eSD)** to record tardies in real time.  
