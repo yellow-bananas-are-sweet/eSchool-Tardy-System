@@ -1,104 +1,31 @@
 # HOW TO MAKE EXE:
 pyinstaller --onefile --noconsole scan_and_print.py
 
-# eSchool Tardy System
+# Tardy Pass Automation System  
+An automated **Tardy Pass Generator** built with Python that replaces manual handwritten tardy passes with a fast, reliable GUI and printing workflow.  
 
-A teacher-operated attendance system for **Cypress Woods High School** that connects directly to **eSchoolData (eSD)** to record tardies in real time.  
-The system allows teachers to scan student IDs, look up student records, and automatically log tardy events into eSD via its API.
+## Overview  
+This project allows school staff to quickly generate and print tardy passes for students by scanning a student’s ID barcode. The system retrieves student information from a database, adds the current date and time, and previews the pass on a GUI before printing.  
 
----
-
-## Project Overview
-This project consists of:
-- **Frontend (Ionic React)** – A teacher interface for scanning student IDs and recording tardies.
-- **Direct eSD API Integration** – Fetches student data and submits tardy attendance records directly from the frontend.
+- Generates a pass in less than 10 seconds (compared to about 1 minute manually)  
+- Designed for schools with 3,200+ students  
+- Eliminates manual data entry — staff only need to scan and print  
 
 ---
 
-## Project Structure
-
-```
-eSchool-Tardy-System/
-│
-├── frontend/ → Ionic React project (teacher interface)
-└── docs/ → Documentation and reference material
-```
-
----
-
-## Setup Instructions
-
-### 1. Clone Repository
-```bash
-git clone https://github.com/yellow-bananas-are-sweet/eSchool-Tardy-System.git
-cd eSchool-Tardy-System
-```
-
-### Frontend (Ionic React)
-```bash
-cd frontend
-npm install
-npm install -g @ionic/cli   # install Ionic CLI globally (only once per machine)
-```
-
-
+## Features  
+- Barcode scanner input to capture Student ID  
+- Database lookup for student first name, last name, and grade  
+- Local system date and time integration  
+- GUI preview before printing  
+- Automatic printing with a single click  
+- Saves significant staff time compared to manual processes  
 
 ---
 
-## Running the Project
-
-### Start the Frontend
-```bash
-cd frontend
-ionic serve
-```
-
-This launches the teacher interface at `http://localhost:8100`.
-
-
-
----
-
-## eSD API Integration
-
-We use eSchoolData API endpoints for:
-
-- **Authentication** (`/oauth/token`)
-- **Student Lookup** (`/ims/oneroster/v1p1/students/{id}`)
-- **Attendance Reasons** (`/v1/attendanceReasons`)
-- **Post Tardy Records** (`/v1/dailyAttendance` or `/v1/periodAttendance`)
-
-**Full eSD API documentation:**
-[API Reference – Renaissance/eSD](https://support.renaissance.com/s/article/API-Endpoints-with-Associated-Resource-Action-1752692902048?language=en_US)
-
-eSchool Archietecture + more api info: https://guru.eschooldata.com/api/Developers/Docs
-
----
-
-## Documentation
-
-- **System Design** → `docs/system-overview.md`
-- **API Flow** → `docs/api-flow.md` (login, lookup, attendance post)
-- **Deployment Guide** → `docs/deployment.md`
-
----
-
-## Current Plan
-
-1. Set up teacher interface (Ionic React frontend).
-2. Authenticate with eSD API.
-3. Scan student ID → fetch student record.
-4. Determine current period from bell schedule.
-5. Post tardy record (daily or period attendance).
-6. Store backup of all tardy logs in a local sheet/database for redundancy.
-
-## Brands of integrations
- - Scanner: Zebra Symbol
- - Printer: Dymo label writer 490 turbo
-
- ## Data
- - ON PASS
-  - Period
-  - Grade Level
-  - Current Time
- - Send data to Google Sheet
+## Technology Stack  
+- **Language:** Python  
+- **GUI Framework:** Tkinter / PyQt (depending on implementation)  
+- **Database:** SQLite / MySQL (configurable)  
+- **Packaging:** PyInstaller for `.exe` deployment  
+- **Barcode Input:** Standard USB barcode scanner  
