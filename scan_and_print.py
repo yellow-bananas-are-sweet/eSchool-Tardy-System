@@ -12,7 +12,7 @@ from PIL import Image, ImageDraw, ImageFont, ImageOps
 import io
 import subprocess
 
-CSV_PATH = "CyWoods-Students.csv"
+CSV_PATH = "School-Students.csv"
 LOG_PATH = "scan_log.xlsx"
 
 # Load students
